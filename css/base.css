@@ -1,0 +1,88 @@
+/*
+ * Responsive 1140px Grid for "Lennart Soundsystem"
+ * based on:
+ * 	Skeleton V1.2
+ * 	Copyright 2011, Dave Gamache
+ * 	www.getskeleton.com
+ * 	Free to use under the MIT license.
+ * 	http://www.opensource.org/licenses/mit-license.php
+ * 	6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Images
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, h1, h2, img, audio {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	body {
+		line-height: 1; }
+
+/* #Basic Styles
+================================================== */
+	body {
+		font: 14px/21px "Comic Sans MS";
+		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+        background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #CCCCCC 100%);
+        background-image: -moz-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #CCCCCC 100%);
+        background-image: -o-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #CCCCCC 100%);
+        background-image: -webkit-gradient(radial, center center, 0, center center, 500, color-stop(0, #FFFFFF), color-stop(1, #CCCCCC));
+        background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #CCCCCC 100%);
+        background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #CCCCCC 100%);
+ }
+
+
+/* #Typography
+================================================== */
+	h1, h2 {
+		color: #181818;
+		font-family: "Comic Sans MS";
+		font-weight: normal; }
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px; font-weight: bold; padding-top: 75px;}
+	h2 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+/* #Buttons
+================================================= */
+	.button {
+		cursor: pointer;
+		font-weight: bold;
+		padding: 2px 5px;
+		border: 1px solid #CCC;
+        text-align: center;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background-image: -ms-linear-gradient(top, #FFFFFF 0%, #CCC 100%);
+        background-image: -moz-linear-gradient(top, #FFFFFF 0%, #CCC 100%);
+        background-image: -o-linear-gradient(top, #FFFFFF 0%, #CCC 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #CCC));
+        background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #CCC 100%);
+        background-image: linear-gradient(to bottom, #FFFFFF 0%, #CCC 100%);
+	}
+
+    .button:hover {
+        background-image: -ms-linear-gradient(top, #FFFFFF 50%, #CCC 100%);
+        background-image: -moz-linear-gradient(top, #FFFFFF 50%, #CCC 100%);
+        background-image: -o-linear-gradient(top, #FFFFFF 50%, #CCC 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50, #FFFFFF), color-stop(1, #CCC));
+        background-image: -webkit-linear-gradient(top, #FFFFFF 50%, #CCC 100%);
+        }

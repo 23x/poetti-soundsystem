@@ -1,0 +1,74 @@
+/*
+ * Responsive 1140px Grid for "Lennart Soundsystem"
+ * based on:
+ * 	Skeleton V1.2
+ * 	Copyright 2011, Dave Gamache
+ * 	www.getskeleton.com
+ * 	Free to use under the MIT license.
+ * 	http://www.opensource.org/licenses/mit-license.php
+ * 	6/20/2012
+*/
+
+
+/* Table of Contents
+ * #Base 1140 Grid
+ * #Tablet (Portrait)
+ * #Mobile (Portrait)
+ * #Mobile (Landscape)
+ * #Clearing 
+*/
+
+/* #Base 1140 Grid */
+    .container                                  { position: relative; width: 1140px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .container .one-third.column                { width: 360px; }
+    .container .two-thirds.column               { width: 700px; }
+    
+/* #Tablet (Portrait) */
+    /* Note: Design for a width of 768px */
+    @media only screen and (min-width: 768px) and (max-width: 1139px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .container .one-third.column,                
+        .container .two-thirds.column               { width: 364px; }
+		h1 											{ padding-top: 50px; }
+    }
+
+/*  #Mobile (Portrait)
+================================================== */
+    /* Note: Design for a width of 320px */
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0; }
+        .container .one-third.column,
+        .container .two-thirds.column  	{ width: 300px; }
+		h1 								{ padding-top: 0px; }
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+    /* Note: Design for a width of 480px */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+    }
+
+/* #Clearing
+================================================== */
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
