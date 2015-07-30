@@ -22,5 +22,7 @@ window.onload=function(){
 
 function playTheShit(id)
 {
-    document.getElementsByClassName("one-third")[id].childNodes[3].play();
+    var audio = document.getElementsByClassName("one-third")[id].childNodes[3];
+    document.location.hash = audio.currentSrc.replace(/.+\/|\..+$/g, "");
+    audio.play();
 }
